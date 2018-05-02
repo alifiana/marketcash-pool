@@ -1,0 +1,24 @@
+{
+    "name": "marketcash-pool",
+    "version": "0.0.1",
+    "license": "GPL-2.0",
+    "authors": "Matthew Little",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MarketCashME/marketcash-pool"
+    },
+    "dependencies": {
+        "bignum": "*",
+        "async": "1",
+        "redis": "*",
+        "cli-color": "*",
+        "dateformat": "*",
+        "base58-native": "*",
+	"multi-hashing": "git://github.com/MarketCashME/node-multi-hashing.git",
+        "cryptonote-util": "git://github.com/MarketCashME/node-cryptonote-util.git"
+				
+    },
+    "engines": {
+        "node": ">=0.10"
+    }
+}
