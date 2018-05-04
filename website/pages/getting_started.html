@@ -63,14 +63,12 @@
 </div>
 
 <hr>
-<!--
 <h3>For <i class="fa fa-windows"></i> Windows users new to mining</h3>
 <p class="getting_started_windows">
-    You can <a class="btn btn-default btn-sm" target="_blank" id="easyminer_link"><i class="fa fa-download"></i> Download</a>
-    and run <a target="_blank" href="https://github.com/zone117x/cryptonote-easy-miner">cryptonote-easy-miner</a> <i class="fa fa-github"></i>
-    which will automatically generate your wallet address and run CPUMiner with the proper parameters.
+    You can <a class="btn btn-default btn-sm" target="_blank" id="xmrstak_link"><i class="fa fa-download"></i> Download</a>
+    and run XMR-Stak
+    that supports the MarketCash algorithm.
 </p>
--->
 <hr>
 
 <h3>Mining Apps</h3>
@@ -86,24 +84,17 @@
         </thead>
         <tbody id="mining_apps">
         <tr>
-            <td class="miningAppTitle">XMR-STAK(by fireice_uk)</td>
+            <td class="miningAppTitle">XMR-Stak (by fireice_uk and MarketCash)</td>
             <td>CPU/GPU</td>
-            <td><a target="_blank" href="https://github.com/fireice-uk/xmr-stak-cpu/releases">Github</a></td>
-            <td><a target="_blank" href="https://github.com/fireice-uk/xmr-stak-cpu">Github</a></td>
+            <td><a target="_blank" href="https://github.com/MarketCashME/xmr-stak/releases">Github</a></td>
+            <td><a target="_blank" href="https://github.com/MarketCashME/xmr-stak">Github</a></td>
         </tr>
         <tr>
             <td colspan="5">
                 <span>Example:</span>
-                <code>xmr-stak-cpu</code>
-                Please edit <code>config.txt</code> file to suit your needs.
+                <code>xmr-stak --currency marketcash   -o stratum+tcp://<span class="exampleHost"></span>:<span class="examplePort"></span> -u Your_MarketCash_Wallet_Here -p x</code> <br>
+                If you prefer, run <code>xmr-stak.exe</code> and enter your information. 
             </td>
-        </tr>
-        <tr>
-            <td class="miningAppTitle">XMR-Stak-AMD (by fireice_uk)</td>
-            <td>OpenCL (AMD)</td>
-            <td><a target="_blank" href="https://github.com/fireice-uk/xmr-stak-amd/releases">Github</a></td>
-            <td><a target="_blank" href="https://www.reddit.com/r/Monero/comments/5prg4a/xmrstakamd_released/">Reddit</a></td>
-            <td><a target="_blank" href="https://github.com/fireice-uk/xmr-stak-amd">Github</a></td>
         </tr>
         </tbody>
     </table>
@@ -141,7 +132,7 @@
         }
     };
 
-    document.getElementById('easyminer_link').setAttribute('href', easyminerDownload);
+    document.getElementById('xmrstak_link').setAttribute('href', xmrstakDownload);
     document.getElementById('miningPoolHost').textContent = poolHost;
 
     var lastPortsJson = '';
