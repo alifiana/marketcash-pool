@@ -51,7 +51,10 @@
             "targetTime": 100,
             "retargetTime": 30,
             "variancePercent": 30,
-            "maxJump": 100
+            "maxJump": 100    
+        },
+        "paymentId": {
+            "addressSeparator": "+"
         },
         "fixedDiff": {
             "enabled": true,
